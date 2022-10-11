@@ -1,0 +1,25 @@
+.botao {
+  padding: 16px 32px;
+  background: linear-gradient(var(--p1), #f2a50c);
+  border-radius: 4px;
+  box-shadow: 0px 1px 2px rgb(0 0 0 / 10%);
+  font: 600 1.125rem/1.35 "Poppins", sans-serif;
+  color: var(--p5);
+  max-width: max-content;
+  border: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-family: 'Poppins';
+  font-weight: 600;
+}
+
+.botao:hover {
+  background: linear-gradient(var(--p1), #e59317);
+}
+
+@media (max-width: 600px) {
+  .botao {
+    padding: 12px 16px;
+    font-size: 16px;
+  }
+}
