@@ -1,4 +1,14 @@
+.container {
+  box-sizing: border-box;
+  max-width: 1200px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .botao {
+  display: inline-block;
   padding: 16px 32px;
   background: linear-gradient(var(--p1), #f2a50c);
   border-radius: 4px;
@@ -9,8 +19,34 @@
   border: none;
   cursor: pointer;
   text-transform: uppercase;
-  font-family: 'Poppins';
-  font-weight: 600;
+}
+
+.botao.secundario {
+  background: var(--c10);
+  color: var(--c2);
+}
+
+.botao.secundario:hover {
+  background: var(--c9);
+}
+
+.link {
+  display: inline-block;
+  color: var(--p1);
+  font: 500 1.5rem/1.5 "Poppins", sans-serif;
+  text-transform: uppercase;
+}
+
+.link::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 4px;
+  background-color: currentColor;
+}
+
+.link:hover {
+  color: var(--c0);
 }
 
 .botao:hover {
@@ -21,5 +57,27 @@
   .botao {
     padding: 12px 16px;
     font-size: 16px;
+  }
+}
+
+.titulo {
+  background-color: var(--c10);
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.titulo p {
+  margin-bottom: 4px;
+}
+
+@media (max-width: 800px) {
+  .titulo {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .titulo p {
+    font-size: 1rem;
+    text-transform: lowercase;
+    font-weight: 400;
   }
 }
